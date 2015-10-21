@@ -15,7 +15,7 @@ Sessões não são utilizadas nas requisições. Clique aqui para mais informaç
 
 ### Content-Type
 
-Em todos os recursos da API do Kiskadi FID utilizamos o Content-type: application/json; charset=utf-8. Se algum recurso 
+Em todos os recursos da API do Kiskadi FID utilizamos o Content-type: application/json; charset=utf-8. Se algum recurso
 específico utilizar outro formato este será especificado na documentação do mesmo.
 
 _Requisições cujo conteúdo não for codificado em UTF-8 serão rejeitadas com status 400 Bad Request_
@@ -23,3 +23,12 @@ _Requisições cujo conteúdo não for codificado em UTF-8 serão rejeitadas com
 ### Versionamento
 
 A API possui um versionamento embutido nas suas URLs. Elas seguem a forma:  _/api/<versão>/<nome_da_api>_. Este documento descreve a versão **v1** da API. Futuras versões serão eventualmente criadas com a evolução da API.
+
+#### Recursos
+* [Lançamento automático de pontos](lancamentos.md)
+* [Consulta de pontos para um determinado cliente](pontos.md)
+* [Troca automática de pontos](trocas.md)
+* [Cancelamento de lançamento ou troca](cancelamentos.md)
+* [Atualização de dados de cliente](atualizacao.md)
+* [Erros api/v1](errors.md)
+* [Criação de cliente sem lançamento de pontos](criacao.md)
