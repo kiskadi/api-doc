@@ -20,7 +20,8 @@ O recurso /api/v1/lancamentos é utilizado no lançamento de pontos para um dete
       "dataHora": "12/01/2014 09:35",
       "valorDaCompra": "21,30",
       "numeroDoDocumento": "43675",
-      "nomeVendedor": "Machado de Assis"
+      "nomeVendedor": "Machado de Assis",
+      "tags": ["aniversariante julho", "masculino"]
     }
 }
 
@@ -81,7 +82,8 @@ O recurso /api/v1/lancamentos é utilizado no lançamento de pontos para um dete
         "dataHora": "12/01/2014 09:35",
         "valorDaCompra": "21,30",
         "numeroDoDocumento": "43675",
-        "nomeVendedor": "Machado de Assis"
+        "nomeVendedor": "Machado de Assis",
+        "tags": "cliente novo"
     }
 }
 
@@ -124,6 +126,7 @@ O recurso /api/v1/lancamentos é utilizado no lançamento de pontos para um dete
 * **avisoEmail**: true | false - Campo opctional (default: true)
 * **avisoSMS**: true | false - Campo op (default: true)
 * **ativo**: true | false - Campo opcional (default: true)
+* **tags** : Array de Texto ou Texto, campo opctional
 
 #### Observações
 
