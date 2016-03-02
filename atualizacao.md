@@ -36,7 +36,7 @@ O recurso /api/v1/atualizacao é utilizado para atualizar os dados de um determi
     "status": "Sucesso",
     "mensagem": "Cliente atualizado com sucesso",
     "consumidor": {
-      "id": 1,
+      "kiskadi_id": 1,
       "nome": "Felipe Gentil",
       "cpf": "18117526085",
       "telefone": "16991546201"
@@ -85,7 +85,7 @@ O recurso /api/v1/atualizacao é utilizado para atualizar os dados de um determi
         "status": "Sucesso",
         "mensagem": "Cliente criado com sucesso",
         "consumidor": {
-            "id": 4,
+            "kiskadi_id": 4,
             "nome": null,
             "cpf": "61182163556",
             "telefone": "1199990101",

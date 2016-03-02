@@ -36,7 +36,7 @@ O recurso /api/v1/criacao é utilizado para criar um cliente sem que seja realiz
         "mensagem": "Cliente criado com sucesso"
     },
     "consumidor": {
-        "id": "123",
+        "kiskadi_id": "123",
         "nome": "Felipe API Criação 01",
         "telefone": "1699880001",
         "cpf": "66229255855",
@@ -116,7 +116,7 @@ O recurso /api/v1/criacao é utilizado para criar um cliente sem que seja realiz
         "mensagem": "Cliente já cadastrado"
     },
     "consumidor": {
-        "id": "123",
+        "kiskadi_id": "123",
         "nome": "Felipe API Criação 01",
         "telefone": "1699880001",
         "cpf": "66229255855",

@@ -27,7 +27,7 @@ O recurso /api/v1/pontos é utilizado para fazer uma consulta da quantidade de p
         "mensagem": "200",
         "desconto": "10",
         "consumidor": {
-            "id": "123",
+            "kiskadi_id": "123",
             "nome": "Felipe Gentil",
             "telefone": "1699990101",
             "cpf": "18117526085",
@@ -64,7 +64,7 @@ O recurso /api/v1/pontos é utilizado para fazer uma consulta da quantidade de p
         "mensagem": "200",
         "desconto": "10",
         "consumidor": {
-            "id": "123",
+            "kiskadi_id": "123",
             "nome": "Felipe Gentil",
             "telefone": "1699990101",
             "cpf": "18117526085",
