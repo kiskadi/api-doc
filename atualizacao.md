@@ -36,7 +36,56 @@ O recurso /api/v1/atualizacao é utilizado para atualizar os dados de um determi
     "status": "Sucesso",
     "mensagem": "Cliente atualizado com sucesso",
     "consumidor": {
-      "kiskadi_id": 1,
+      "kiskadi_id": "1",
+      "nome": "Felipe Gentil",
+      "cpf": "18117526085",
+      "telefone": "16991546201"
+      "dataNascimento": "1970-01-01",
+      "email": "felipeapicriacao01@gmail.com",
+      "endereco": "Rua Doutor César",
+      "cep": "14801-309",
+      "cidade": "São Paulo",
+      "uf": "SP",
+      "number": "421",
+      "complemento": "ap 122",
+      "avisoEmail": false,
+      "avisoSms": true,
+      "pontosAtuais": "1600.0"
+    }
+  }
+}
+```
+
+```
+# Envio
+{
+    "loja": "Bemtevi",
+    "nomeDaLoja": "Loja Shopping",
+    "cliente": {
+        "kiskadi_id": "1",
+    },
+    "alterar": {
+        "cpf": "18117526085",
+        "dataNascimento": "01/01/1970",
+        "cep": "14801-309",
+        "cidade": "São Paulo",
+        "endereco": "Rua Doutor César",
+        "uf": "SP",
+        "numero": "421",
+        "complemento": "ap 122",
+        "avisoEmail": false,
+        "avisoSMS": false
+    }
+}
+
+# Resposta
+{
+  "loja": "Kiskadi Store",
+  "respostaAtualizacao": {
+    "status": "Sucesso",
+    "mensagem": "Cliente atualizado com sucesso",
+    "consumidor": {
+      "kiskadi_id": "1",
       "nome": "Felipe Gentil",
       "cpf": "18117526085",
       "telefone": "16991546201"
@@ -85,7 +134,7 @@ O recurso /api/v1/atualizacao é utilizado para atualizar os dados de um determi
         "status": "Sucesso",
         "mensagem": "Cliente criado com sucesso",
         "consumidor": {
-            "kiskadi_id": 4,
+            "kiskadi_id": "4",
             "nome": null,
             "cpf": "61182163556",
             "telefone": "1199990101",
@@ -136,9 +185,9 @@ O recurso /api/v1/atualizacao é utilizado para atualizar os dados de um determi
 #### Obrigatoriedade dos campos
 * **loja**: campo obrigatório com o nome da loja cadastrada no Kiskadi FID.
 * **nomeDaLoja**: campo opcional com o nome da loja cadastrada no Kiskadi FID, caso esse parâmetro não seja enviado, a loja será atribuída à loja do consumidor, ou seja, onde ele foi cadastrado pela primeira vez.
-* **cliente**: campo obrigatório, recebe um json com os dados necessários para localizar um cliente, podendo ser TELEFONE, CPF ou EMAIL
+* **cliente**: campo obrigatório, recebe um json com os dados necessários para localizar um cliente, podendo ser TELEFONE, CPF, EMAIL ou KISKADI_ID (o último, que em caso de presença, será utilizado como chave primária na busca pelo cliente)
 * **alterar**: campo obrigatório, recebe um json com os dados necessários para atualizar o cliente do json anterior, podendo ser _NOME, TELEFONE, CPF, EMAIL, DATANASCIMENTO, CEP, CIDADE, ENDERECO, UF, NUMERO, COMPLEMENTO, AVISOEMAIL e AVISOSMS_.
-* Dentro do _json_ *cliente*, CPF, telefone e email são campos opcionais, mas é OBRIGATÓRIO a presença de pelo menos um desses, caso contrário o sistema não encontrará o cliente e nem será capaz de criar um novo.
+* Dentro do _json_ *cliente*, CPF, TELEFONE e EMAIL são campos opcionais, mas é OBRIGATÓRIO a presença de pelo menos um desses ou do identificador KISKADI_ID, caso contrário o sistema não encontrará o cliente e nem será capaz de criar um novo.
 
 #### Observações
 * O atributo **cliente** representa todos os dados atualizados com o KiskadiFID do cliente selecionado.

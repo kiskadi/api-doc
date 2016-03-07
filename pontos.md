@@ -87,6 +87,43 @@ O recurso /api/v1/pontos é utilizado para fazer uma consulta da quantidade de p
 ```
 # Envio
 {
+    "loja": "Kiskadi Store",
+    "cliente": {
+        "kiskadi_id": "123"
+    }
+}
+
+# Resposta
+{
+    "loja": "Kiskadi Store",
+    "respostaPontos": {
+        "status": "Sucesso",
+        "mensagem": "200",
+        "desconto": "10",
+        "consumidor": {
+            "kiskadi_id": "123",
+            "nome": "Felipe Gentil",
+            "telefone": "1699990101",
+            "cpf": "18117526085",
+            "email": "felipe@gentil.com",
+            "dataNascimento": "01/01/1970",
+            "cep": "14801-309",
+            "cidade": "São Paulo",
+            "endereco": "Rua Doutor César",
+            "uf": "SP",
+            "numero": "421",
+            "complemento": "ap 122",
+            "avisoEmail": false,
+            "avisoSMS": false,
+            "pontosAtuais": "100"
+        }
+    }
+}
+```
+
+```
+# Envio
+{
     "loja": "Kiskadi Store II",
     "cliente": {
         "email": "joaodasilva@email.com",
@@ -114,6 +151,7 @@ O recurso /api/v1/pontos é utilizado para fazer uma consulta da quantidade de p
 * **cpf**: campo opcional (*)
 * **email**: campo opcional (*)
 * **telefone**: campo opcional (*)
+* **kiskadi_id**: campo optional, em caso de presença, será utilizado como chave primária na busca pelo cliente
 
 _CPF, telefone e email são campos opcionais, mas é OBRIGATÓRIO a presença de pelo menos um desses_
 
