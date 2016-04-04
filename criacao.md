@@ -24,7 +24,8 @@ O recurso /api/v1/criacao é utilizado para criar um cliente sem que seja realiz
         "complemento": "Ap 122",
         "avisoEmail": true,
         "avisoSms": true,
-        "ativo": true
+        "ativo": true,
+        "tags": ["sexo masculino", "cliente novo"]
     }
 }
 
@@ -50,7 +51,8 @@ O recurso /api/v1/criacao é utilizado para criar um cliente sem que seja realiz
         "complemento": "Ap 122",
         "avisoEmail": true,
         "avisoSms": true,
-        "ativo": true
+        "ativo": true,
+        "tags": ["sexo masculino", "cliente novo"]
     }
 }
 ```
@@ -104,7 +106,8 @@ O recurso /api/v1/criacao é utilizado para criar um cliente sem que seja realiz
         "complemento": "Ap 122",
         "avisoEmail": true,
         "avisoSms": true,
-        "ativo": true
+        "ativo": true,
+        "tags": "cliente novo"
     }
 }
 
@@ -130,7 +133,8 @@ O recurso /api/v1/criacao é utilizado para criar um cliente sem que seja realiz
         "complemento": "Ap 122",
         "avisoEmail": true,
         "avisoSms": true,
-        "ativo": true
+        "ativo": true,
+        "tags": ["cliente-novo"]
     }
 }
 ```
@@ -142,3 +146,4 @@ O recurso /api/v1/criacao é utilizado para criar um cliente sem que seja realiz
 
 #### Observações
 * Dentro do _json_ *cliente*, CPF, telefone e email são campos opcionais, mas é OBRIGATÓRIO a presença de pelo menos um desses, caso contrário o sistema não encontrará o cliente e nem será capaz de criar um novo.
+* O atributo `tags` é opcional, podendo ser um array de strings ou simplesmente uma string, o retorno, dentro de *consumidor* sempre será um array, vazio, com um elemento ou mais.
