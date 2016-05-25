@@ -88,7 +88,10 @@ O recurso /api/v1/cancelamentos é utilizado para cancelar um lançamento ou tro
 * **loja**: campo obrigatório com o nome da loja cadastrada no Kiskadi FID.
 * **nomeDaLoja**: campo opcional com o nome da loja cadastrada no Kiskadi FID, caso esse parâmetro não seja enviado, a loja será atribuída à loja do consumidor, ou seja, onde ele foi cadastrado pela primeira vez.
 * **nome**: campo opcional
-* **cpf**, **telefone** e **email**: é obrigatório a presença de pelo menos um para que o cliente seja confirmado com o voucher
+* **cpf**: [campo opcional](identificacao_do_cliente.md)
+* **email**: [campo opcional](identificacao_do_cliente.md)
+* **telefone**: [campo opcional](identificacao_do_cliente.md)
+* **kiskadi_id**: [campo opcional](identificacao_do_cliente.md)
 * **voucher**: campo obrigatório
 
 #### Observações
