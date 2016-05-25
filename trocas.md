@@ -95,20 +95,19 @@ O recurso /api/v1/trocas é utilizado para enviar um registro de troca de pontos
 * **troca**: campo obrigatório, recebe um json com dados da transação
 * **nomeDaLoja**: campo obrigatório com o nome da filial
 * **nome**: campo opcional
-* **cpf**: campo opcional
-* **email**: campo opcional
-* **telefone**: campo obrigatóro
+* **cpf**: [campo opcional](identificacao_do_cliente.md)
+* **email**: [campo opcional](identificacao_do_cliente.md)
+* **telefone**: [campo opcional](identificacao_do_cliente.md)
+* **kiskadi_id**: [campo opcional](identificacao_do_cliente.md)
+* **aniversario**: campo opcional
 * **pontos**: campo obrigatório, quantidade de pontos a ser trocada
 
 #### Observações
-Os atributos CPF e E-mail não são obrigatórios na troca de pontos, entretanto, um email será enviado ao gerente da loja com a seguinte mensagem:
+Cada loja decide um conjunto de atributos cuja presença no cadastro é obrigatória para a troca de pontos, entre CPF, Email e Data de aniversário.
+Além destes, o Nome e o Telefone precisam estar no cadastro para trocas serem bem-sucedidas.
 
-_"Caro <gerente_da_loja>,_
-
-_Informamos que o operador <nome_do_usuario> da loja <nome_da_loja> realizou a troca de pontos por benefício para o(a) cliente <cliente_nome_e_telefone> sem completar os seguintes dados cadastrais: <CPF/EMAIL>_
-
-_Kiskadi"_
-
+Estes atributos não precisam estar na chamada da API de troca, mas já devem estar presentes no cadastro do cliente no Kiskadi.
+Caso o cadastro do cliente não tenha todos os dados obrigatórios, a troca falhará e a mensagem de erro retornada pela API indicará qual(is) atributo(s) precisam ser preenchidos.
 
 Alguns possíveis erros no retorno do JSON
 * "CPF inválido"
@@ -116,3 +115,4 @@ Alguns possíveis erros no retorno do JSON
 * "Telefone inválido"
 * "Nome da loja não encontrado"
 * "Os pontos não são suficientes para esse benefício"
+* "Falha ao trocar pontos (Para efetuar trocas o cliente deve possuir email preenchido(s))"

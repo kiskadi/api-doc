@@ -107,9 +107,10 @@ O recurso /api/v1/lancamentos é utilizado no lançamento de pontos para um dete
 * **lancamentos**: campo obrigatório, recebe um json com dados da transação
 * **nomeDaLoja**: campo obrigatório com o nome da filial
 * **nome**: campo opcional
-* **cpf**: campo opcional
-* **email**: campo opcional
-* **telefone**: campo obrigatório *
+* **cpf**: [campo opcional](identificacao_do_cliente.md)
+* **email**: [campo opcional](identificacao_do_cliente.md)
+* **telefone**: [campo opcional](identificacao_do_cliente.md)
+* **kiskadi_id**: [campo opcional](identificacao_do_cliente.md)
 * **aniversario**: campo opcional, formato "dia/mês" ou "dia/mês/ano"
 * **dataHora**: campo obrigatório com a data e hora da transação
 * **valorDaCompra**: campo obrigatório com o valor total da compra
@@ -117,16 +118,16 @@ O recurso /api/v1/lancamentos é utilizado no lançamento de pontos para um dete
 * **nomeVendedor**: campo opcional, representa o vendedor que realizou a venda
 * **cpf**: Texto
 * **dataNascimento**: Data
-* **cep**: Texto - Campo opctional
-* **cidade**: Texto - Campo opctional
-* **endereco**: Texto - Campo opctional
-* **uf**: Texto - Campo opctional
-* **numero**: Texto - Campo opctional
-* **complemento**: Texto - Campo opctional
-* **avisoEmail**: true | false - Campo opctional (default: true)
-* **avisoSMS**: true | false - Campo op (default: true)
+* **cep**: Texto - Campo opcional
+* **cidade**: Texto - Campo opcional
+* **endereco**: Texto - Campo opcional
+* **uf**: Texto - Campo opcional
+* **numero**: Texto - Campo opcional
+* **complemento**: Texto - Campo opcional
+* **avisoEmail**: true | false - Campo opcional (default: true)
+* **avisoSMS**: true | false - Campo opcional (default: true)
 * **ativo**: true | false - Campo opcional (default: true)
-* **tags** : Array de Texto ou Texto, campo opctional
+* **tags** : Array de Texto ou Texto, campo opcional
 
 #### Observações
 

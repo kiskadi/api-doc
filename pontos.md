@@ -148,12 +148,10 @@ O recurso /api/v1/pontos é utilizado para fazer uma consulta da quantidade de p
 * **loja**: campo obrigatório com o nome da loja cadastrada no Kiskadi FID.
 * **cliente**: campo obrigatório, recebe parâmetros com informações do cliente
 * **nome**: campo opcional
-* **cpf**: campo opcional (*)
-* **email**: campo opcional (*)
-* **telefone**: campo opcional (*)
-* **kiskadi_id**: campo optional, em caso de presença, será utilizado como chave primária na busca pelo cliente
-
-_CPF, telefone e email são campos opcionais, mas é OBRIGATÓRIO a presença de pelo menos um desses_
+* **cpf**: [campo opcional](identificacao_do_cliente.md)
+* **email**: [campo opcional](identificacao_do_cliente.md)
+* **telefone**: [campo opcional](identificacao_do_cliente.md)
+* **kiskadi_id**: [campo opcional](identificacao_do_cliente.md)
 
 #### Observações
 

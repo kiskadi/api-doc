@@ -142,8 +142,7 @@ O recurso /api/v1/criacao é utilizado para criar um cliente sem que seja realiz
 #### Obrigatoriedade dos campos
 * **loja**: campo obrigatório com o nome da loja cadastrada no Kiskadi FID.
 * **nomeDaLoja**: campo opcional com o nome da loja cadastrada no Kiskadi FID, caso esse parâmetro não seja enviado, a loja será atribuída à loja do consumidor, ou seja, onde ele foi cadastrado pela primeira vez.
-* **cliente**: campo obrigatório, recebe um json com os dados necessários para localizar um cliente, podendo ser TELEFONE, CPF ou EMAIL
+* **cliente**: campo obrigatório, recebe um json com os dados necessários para localizar um cliente, podendo ser TELEFONE, CPF, EMAIL ou KISKADI_ID (veja como é feita a [identificação do cliente](identificacao_do_cliente.md))
 
 #### Observações
-* Dentro do _json_ *cliente*, CPF, telefone e email são campos opcionais, mas é OBRIGATÓRIO a presença de pelo menos um desses, caso contrário o sistema não encontrará o cliente e nem será capaz de criar um novo.
 * O atributo `tags` é opcional, podendo ser um array de strings ou simplesmente uma string, o retorno, dentro de *consumidor* sempre será um array, vazio, com um elemento ou mais.

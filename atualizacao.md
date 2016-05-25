@@ -185,9 +185,8 @@ O recurso /api/v1/atualizacao é utilizado para atualizar os dados de um determi
 #### Obrigatoriedade dos campos
 * **loja**: campo obrigatório com o nome da loja cadastrada no Kiskadi FID.
 * **nomeDaLoja**: campo opcional com o nome da loja cadastrada no Kiskadi FID, caso esse parâmetro não seja enviado, a loja será atribuída à loja do consumidor, ou seja, onde ele foi cadastrado pela primeira vez.
-* **cliente**: campo obrigatório, recebe um json com os dados necessários para localizar um cliente, podendo ser TELEFONE, CPF, EMAIL ou KISKADI_ID (o último, que em caso de presença, será utilizado como chave primária na busca pelo cliente)
+* **cliente**: campo obrigatório, recebe um json com os dados necessários para localizar um cliente, podendo ser TELEFONE, CPF, EMAIL ou KISKADI_ID (veja como é feita a [identificação do cliente](identificacao_do_cliente.md))
 * **alterar**: campo obrigatório, recebe um json com os dados necessários para atualizar o cliente do json anterior, podendo ser _NOME, TELEFONE, CPF, EMAIL, DATANASCIMENTO, CEP, CIDADE, ENDERECO, UF, NUMERO, COMPLEMENTO, AVISOEMAIL e AVISOSMS_.
-* Dentro do _json_ *cliente*, CPF, TELEFONE e EMAIL são campos opcionais, mas é OBRIGATÓRIO a presença de pelo menos um desses ou do identificador KISKADI_ID, caso contrário o sistema não encontrará o cliente e nem será capaz de criar um novo.
 
 #### Observações
 * O atributo **cliente** representa todos os dados atualizados com o KiskadiFID do cliente selecionado.

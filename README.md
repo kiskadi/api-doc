@@ -22,7 +22,7 @@ _Requisições cujo conteúdo não for codificado em UTF-8 serão rejeitadas com
 
 ### Versionamento
 
-A API possui um versionamento embutido nas suas URLs. Elas seguem a forma:  _/api/<versão>/<nome_da_api>_. Este documento descreve a versão **v1** da API. Futuras versões serão eventualmente criadas com a evolução da API.
+A API possui um versionamento embutido nas suas URLs. Elas seguem a forma: _`/api/<versão>/<nome_da_api>`_. Este documento descreve a versão **v1** da API. Futuras versões serão eventualmente criadas com a evolução da API.
 
 #### Recursos
 * [Lançamento automático de pontos](lancamentos.md)
