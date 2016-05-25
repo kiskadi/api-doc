@@ -2,12 +2,13 @@
 
 O Kiskadi pode receber uma série de atributos para identificar um cliente.
 São eles:
-* **kiskadi_id** identificação numérica única de um cliente no Kiskadi
-* **cpf** CPF do cliente
-* **email** Email do cliente
-* **telefone** Telefone do cliente
+* **kiskadi_id**: identificação numérica única de um cliente no Kiskadi
+* **cpf**: CPF do cliente
+* **email**: Email do cliente
+* **telefone**: Telefone do cliente
 
 O Kiskadi determina qual o cliente está sendo referenciado pela API usando estes atributos na seguinte ordem de prioridade:
+
 1. kiskadi_id
 2. cpf
 3. email
