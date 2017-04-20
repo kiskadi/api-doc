@@ -5,13 +5,13 @@ KiskadiAPI
 
 A API do Kiskadi FID permite que as lojas troquem informações de lançamento e troca de pontos de forma rápida, simples e segura.
 
-Nossa API é construida seguindo os princípios arquiteturais RESTful, o que, além de prover uma plataforma robusta e escalável, torna a integração muito mais simples e intuitiva do que os modelos tradicionais de integração de sistemas distribuídos, como SOAP e XML-RPC.
+Nossa API é construida seguindo os princípios arquiteturais [RESTful](http://en.wikipedia.org/wiki/Representational_state_transfer), o que, além de prover uma plataforma robusta e escalável, torna a integração muito mais simples e intuitiva do que os modelos tradicionais de integração de sistemas distribuídos, como SOAP e XML-RPC.
 
 ### Autenticação
 
 Todas as URLs referenciadas neste documento utilizam autenticação.
 O método de autenticação utilizado é HTTP Basic Access Authentication. Isto significa que suas credenciais serão solicitadas em todas as requisições.
-Sessões não são utilizadas nas requisições. Clique aqui para mais informações sobre autenticação HTTP Basic.
+Sessões não são utilizadas nas requisições. Clique [aqui](http://en.wikipedia.org/wiki/HTTP_authentication) para mais informações sobre autenticação HTTP Basic.
 
 ### Content-Type
 
